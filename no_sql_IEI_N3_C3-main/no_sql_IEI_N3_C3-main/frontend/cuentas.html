@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Cuentas Bancarias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Cuentas Bancarias por Usuario</h2>
+                <div>
+                    <button class="btn btn-outline-secondary me-2" onclick="window.location.href='./inicio.html'">Ver Usuarios</button>
+                    <button class="btn btn-success" onclick="window.location.href='./formulario.html'">Registrar Usuario</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Banco</th>
+                            <th>Tipo Cuenta</th>
+                            <th>N° Cuenta</th>
+                            <th>Titular</th>
+                            <th>Saldo</th>
+                            <th>Estado</th>
+                            <th>Nombre Usuario</th>
+                            <th>RUT Usuario</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCuentas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/cuentas.js"></script>
+</body>
+</html>
